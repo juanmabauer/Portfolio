@@ -10,7 +10,7 @@ function PageTransitions(){
         sectBtn[i].addEventListener('click', function(){
             let currentBtn = document.querySelectorAll('.active-btn');
             currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
-            this.className += 'active-btn';
+            this.className += ' active-btn';
         })
     }
 
@@ -32,6 +32,15 @@ function PageTransitions(){
             element.classList.add('active');
         }
     })
+    
+    //Light mode
+    const themeBtn = document.querySelector('.theme-btn');
+        themeBtn.addEventListener('click',() =>{
+            let element = document.body;
+            element.classList.toggle('light-mode')
+        })
 }
+
+
 
 PageTransitions();
