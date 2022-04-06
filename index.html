@@ -229,7 +229,12 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form class="contact-form" name="formulario" method="post" data-netlify="true" >
+                        <form class="contact-form" name="formulario" method="post" data-netlify="true" netlify-honeypot="bot-field" >
+                            <p class="hidden" style="display: none">
+                                <label>
+                                  Don’t fill this out if you’re human: <input name="bot-field" />
+                                </label>
+                              </p>
                             <div class="input-control i-c-2">
                                 <input type="text" name="nombre" required placeholder="Nombre">
                                 <input type="email" name="email" required placeholder="Email">
