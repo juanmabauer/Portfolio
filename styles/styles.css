@@ -273,6 +273,10 @@ section {
   line-height: 2rem;
 }
 
+.sidebar-max600 {
+  display: none;
+}
+
 /*Download-btn*/
 .btn-con {
   display: -webkit-box;
@@ -919,6 +923,12 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 2.3rem;
+  }
+  .sidebar-min600 {
+    display: none;
+  }
+  .sidebar-max600 {
+    display: block;
   }
 }
 
